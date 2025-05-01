@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="../4_17/imege/원휴.png" tepe="image.x-icon">
+  <!--웹페이지 제목 옆에 나오는 작은 아이콘, 유튜브나 네이버 켜면 바로 확인 가능-->
+  <link rel="stylesheet" href="./01_htmle_deep.css">
+</head>
+<body>
+  <figure>
+    <figcaption class="audio">
+      오디오 넣기 테스트
+    </figcaption>
+    <audio src="./test_sample/guinness.mp3" controls>
+    </audio>
+  </figure>
+  <br><br>
+  <figure>
+    <figcaption calss="video">
+      비디오 넣기 테스트
+    </figcaption>
+    <video src="./test_sample/hanwha.mp4" controls, class="video">
+    </video>
+  </figure>
+  <!--
+    <video controls>
+      <source src="./test_sample/hanwha.mp4" type="video/mp4">
+      <source src="./test_sample/hanwha.mov" type="video/mov">
+      <source src="./test_sample/hanwha.webm" type="video/webm">
+      <p>이 브라우저에서 비디오 태그를 지원하지 않습니다</p>
+    </video>
+    위와 같이 source 태그를 사용해서도 비디오 또는 오디오 파일을 넣을 수 있고 여러 태그를 같이 사용하는 이유는 지원하지 않는 형식의 파일이 있을 수 있기 때문에 다양한 가능성을 열어두기 위해 지정함
+  -->
+  <br><br>
+  <img src="../4_17/imege/원휴.png" alt="">
+  <p class="sr-only">
+    게임이미지
+  </p>
+</body>
+</html>
