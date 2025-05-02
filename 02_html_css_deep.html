@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 심화과정 2일차</title>
+  <link rel="stylesheet" href="./02_html_css_deep.css">
+</head>
+<body>
+  <!---
+  <h1>다른 CSS 파일 임포트하기</h1>
+
+  <P>
+    <strong>@import</strong>를 사용하면 절대 및 상대 결로를 사용해서 <br>
+    다른 css 파일의 내용을 불러올 수 있음 <br>
+  </P>
+  <p>
+    여러 페이지에서 공통적으로 사용되는 스타일들은 특정 파일로 <br>
+    분리하여 모듈화가 가능함 <br>
+  </p>
+  <p class="sr-only">
+    이 문단은 임포트된 <i>shared.css</i>의 코드로 숨김처리됨
+  </p>
+  -->
+
+  <!--
+  <h1> css 변수 사용하기 </h1>
+  <p>
+    <u class="not-good">안녕 하나</u>
+    <u class="wrong">안녕 두울</u>
+  </p>
+  <p>
+    <i class="not-good">안녕 삼</i>
+    <b class="wrong">안녕 4</b>
+  </p>
+-->
+
+<!--
+<h1> css 속성값을 기준으로 선택하기 </h1>
+
+  <a href="https://www.youtube.com/@%ED%9E%9D%ED%83%95">힝탕 유튜브</a>
+  <a href="https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8">나무위키</a>
+-->
+
+<!--
+<h1>특정 속성이 있는 요소만 선택</h1>
+
+  <input type="checkbox" class="ch1">
+  <label for="ch1">option 1</label>
+  <input type="checkbox" id="ch2" disabled>
+  <label for="ch2">option 2</label>
+  <input type="checkbox" id="ch3">
+  <label for="ch3">option 3</label>
+-->
+
+<!--
+<h1>속성값이 특정 텍스트를 포함하는 요소만 선택</h1>
+
+  <span class="fruit-item-1">사과</span>
+  <span class="fruit-item-2">딸기</span>
+  <span class="fruit-item-3">포도</span>
+  <span class="vege-item-1">오이</span>
+  <span class="vege-item-2">당근</span>
+  <span class="vege-item-3">슈퍼당근</span>
+-->
+
+<h1>가상 클래스를 사용하기</h1>
+
+<h3>마우스 동작과 관련된 가상 클래스</h3>
+  <a class="mause" href="#">마우스 오버 시와 클릭 중 배경색 변경</a>
+  <br><br>
+  
+<h3>옵션 선택을 위한 가상 클래스</h3>
+  <input type="radio" name="r" id="cb1">
+  <label for="cd1">옵션 1</label>
+  <input type="radio" name="r" id="cb2">
+  <label for="cd1">옵션 2</label>
+  <input type="radio" name="r" id="cb3">
+  <label for="cd1">옵션 3</label>
+  <input type="radio" name="r" id="cb4" disabled>
+  <label for="cd1">옵션 4</label>
+  <br><br>
+
+  <h3>포커스 관련 가상 클래스</h3>
+    <label for="ti-1">일반</label>
+    <input type="text" id="ti-1">
+    <br>
+    <label for="ti-2">필수</label>
+    <input type="text" id="ti-2" required>
+    <br>
+    <label for="ti-3">조건</label>
+    <input type="email" placeholder="이메일주소" id="ti-3">
+
+  <h3>포커스 표시방법의 차이</h3>
+    <button class="all-focus">클릭 과 탭 모두 포커스 표시</button>
+    <input type="checkbox" id="cb5" class="all-focus">
+    <label for="cb5">체크</label>
+    <button class="no-focus">포커스를 표시하지 않음</button>
+    <input type="checkbox" id="cb6" class="no-focus">
+    <label for="cb6">체크</label>
+    <button class="tab-focus">탭으로 선택 시만 포커스</button>
+    <input type="checkbox" id="cb6" class="tab-focus">
+    <label for="cb6">체크</label>
+    <br><br>
+
+  <h3>순서 선택을 위한 가상 클래스</h3>
+    <div>
+      <i>i</i>
+      <b>b</b>
+      <b>b</b>
+      <i>i</i>
+      <em>em</em>
+      <b>b</b>
+      <i>i</i>
+      <i>i</i>
+      <i>i</i>
+      <b>b</b>
+    </div>
+    <div>
+      <span>독자적</span>
+    </div>
+  <br><br>
+
+  <h3>가상요소</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li class="later">JavaScript</li>
+    </ul>
+    <br><br>
+
+  <h3>마우스로 선택한 영역을 가상 요소로</h3>
+    <p class="mause-2">
+      이 문단을 드래그해서 선택하면?.
+      <span class="orange">여기는 오랜지 색으로,</span>
+      <span class="dark">이 부분은 어두운 색으로</span>
+      선택 영역에 보일 것이야
+    </p>
+    <br>
+    
+    <input type="text" placeholder="이 칸을 비우지 마세요" required>
+</body>
+</html>

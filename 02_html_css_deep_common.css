@@ -1,0 +1,28 @@
+
+/* u태그 안에서 사용되는 class, id에 적용 가능한 css 변수 선언 */
+u {
+  --not-good: wavy underline orange;
+  --wrong: wavy underline red;
+}
+
+.wrong {
+  --warn: yellow;
+}
+
+/* 루트로 가상클래스를 지정한 후에 공통으로 사용할 변수와 속성을 지정하여 
+공통 요소를 한번에 정리할 수 있음 */
+:root {
+  --font-small: 8px;
+  --font-normal: 16px;
+  --font-x-large: 32px;
+  --font-xx-large: 40px;
+  --font-xxx-large: 48px;
+
+  --font-w-normal: 400;
+  --font-w-bold: 600;
+  --font-w-extrabole: 900;
+
+  --color-main: #ff4200;
+  --color-sub: #865a55;
+  --color-text: #40281c;
+}
