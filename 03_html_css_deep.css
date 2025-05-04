@@ -1,0 +1,68 @@
+/*
+.blue {
+  color: slateblue;
+}
+.green {
+  color: olivedrab;
+}
+.red {
+  color: orangered;
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap');
+.google-font {
+  font-family: "Single Day", cursive; /*이게 꼭 들어가야 함, 구글 폰트를 불러와서 우선 적용하되 불러올 수 없으면 cursive글꼴을 적용 (기본 흘림체)*/
+}
+
+@font-face {
+  font-family: "NanumPenScript";
+  src: url(../font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 100;
+  src: url(../font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 300;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 400;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 500;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 700;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 900;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+/*이 서체는 레귤러 굵기만 있는 서체로 적용이 안됨, 폰트 페이스에 대해서는 추가공부 필요*/
+
+input[type=text], button {
+  /*sub, super, text-top, text-bottom, middle, 수치입력 가능 */
+  vertical-align: text-top;
+}
+/*vertical-align에 들어가는 명령어 및 수치에 따라 인풋 창이 텍스트 라인의 어느 곳에 정렬할 것인지*/
+
+div {
+  width: 800px;
+  
+  overflow: scroll; /*출력 창을 넘어가는 텍스트를 숨길것인지, 스크롤로 보여줄 것인지 표시*/
+  white-space: nowrap;
+  text-overflow: ellipsis; /*잘리는 텍스트 부분부터 ... 표시*/
+}
+/*해당 부분은 한번 더 복습할 것*/
