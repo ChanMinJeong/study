@@ -10,12 +10,13 @@
 }
 */
 
-
+/*
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap');
 .google-font {
-  font-family: "Single Day", cursive; /*이게 꼭 들어가야 함, 구글 폰트를 불러와서 우선 적용하되 불러올 수 없으면 cursive글꼴을 적용 (기본 흘림체)*/
+  font-family: "Single Day", cursive; 이게 꼭 들어가야 함, 구글 폰트를 불러와서 우선 적용하되 불러올 수 없으면 cursive글꼴을 적용 (기본 흘림체)
 }
-
+*/
+/*
 @font-face {
   font-family: "NanumPenScript";
   src: url(../font/NanumPenScript-Regular.ttf);
@@ -50,19 +51,109 @@
   font-weight: 900;
   src: url(./font/NanumPenScript-Regular.ttf);
 }
+  */
 /*이 서체는 레귤러 굵기만 있는 서체로 적용이 안됨, 폰트 페이스에 대해서는 추가공부 필요*/
-
+/*
 input[type=text], button {
-  /*sub, super, text-top, text-bottom, middle, 수치입력 가능 */
+  sub, super, text-top, text-bottom, middle, 수치입력 가능 
   vertical-align: text-top;
 }
+  */
 /*vertical-align에 들어가는 명령어 및 수치에 따라 인풋 창이 텍스트 라인의 어느 곳에 정렬할 것인지*/
-
+/*
 div {
   width: 800px;
   
-  overflow: scroll; /*출력 창을 넘어가는 텍스트를 숨길것인지, 스크롤로 보여줄 것인지 표시*/
+  overflow: scroll; 출력 창을 넘어가는 텍스트를 숨길것인지, 스크롤로 보여줄 것인지 표시
   white-space: nowrap;
-  text-overflow: ellipsis; /*잘리는 텍스트 부분부터 ... 표시*/
+  text-overflow: ellipsis; 잘리는 텍스트 부분부터 ... 표시
 }
+*/
 /*해당 부분은 한번 더 복습할 것*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+.font-review-1 {
+  font-family: "Nanum Brush Script", cursive; /*구글 폰트 사이트에서 가져온 css코드*/
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.font-review-2 {
+  padding: 8px 24px;
+  font-size: 1.4rem;
+  font-family: 'NotoSansKR', 'sans-serif';
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url(./font/static/NotoSansKR-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 100;
+  src: url(./font/static/NotoSansKR-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 300;
+  src: url(./font/static/NotoSansKR-Light.ttf);
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 400;
+  src: url(./font/static/NotoSansKR-Regular.ttf);
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 500;
+  src: url(./font/static/NotoSansKR-Bold.ttf);
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 700;
+  src: url(./font/static/NotoSansKR-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 900;
+  src: url(./font/static/NotoSansKR-Black.ttf);
+}
+/*폰트가 가지고 있는 굵기를 확인하기*/
+/*url 주소 체크*/
+/*family name 설정*/
+
+/*font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+앱을 열면 첫번 째 글꼴, 윈도우에선 맑은 고딕, 맑은 고딕이 없으면 돋움을 표시*/
+
+
+
+.font-review-3 {
+  padding: 8px 24px;
+  font-size: 1.4rem;
+  font-family: 'NanumPenScript', 'sans-serif';
+}
+
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 100;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 400;
+  src: url(./font/NanumPenScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NanumPenScript";
+  font-weight: 900;
+  src: url(./font/NanumPenScript-Regular22.ttf);
+  /*이처럼 잘못된 경로 또는 잘못된 파일이 들어가면 웹에서 기본 서체로 바꿔버림 그래서 굵기가 적용됨*/
+}
+
+/*font-family는 폰트 파일의 이름표를 가져오며
+예를 들어 경로에 ./font/Noto_Serif_KR/static/NotoSerifKR-Black.ttf 를 설정하고(노토세리프 폰트) family에 NanumPenScript를 설정하면 적용되지 않음*/
